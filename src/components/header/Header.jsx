@@ -28,9 +28,9 @@ function Header() {
             <nav className="header__nav">
                 <Link
                     className={`header__nav__link ${
-                        location.pathname === "/kasa-app" && "selected"
+                        location.pathname === "/" && "selected"
                     }`}
-                    to="/kasa-app"
+                    to="/"
                 >
                     Accueil
                 </Link>

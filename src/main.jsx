@@ -10,11 +10,11 @@ import Footer from "./components/footer/Footer";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <Router>
+        <Router basename="/kasa-app">
             <div className="page-container">
                 <Header />
                 <Routes>
-                    <Route path="/kasa-app" element={<Home />} />
+                    <Route path="/" element={<Home />} />
                     <Route path="/a-propos" element={<APropos />} />
                     <Route
                         path="/fiche-logement/:id"
