@@ -30,7 +30,7 @@ function Header() {
                     className={`header__nav__link ${
                         location.pathname === "/" && "selected"
                     }`}
-                    to="/"
+                    to="/kasa-app"
                 >
                     Accueil
                 </Link>

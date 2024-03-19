@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <div className="page-container">
                 <Header />
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/kasa-app" element={<Home />} />
                     <Route path="/a-propos" element={<APropos />} />
                     <Route
                         path="/fiche-logement/:id"
