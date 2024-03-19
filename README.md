@@ -95,8 +95,14 @@ yarn add gh-pages --dev
 -   Add scripts :
 
 ```bash
-"predeploy": "vite build",
+"predeploy": "yarn run build",
 "deploy": "gh-pages -d dist",
+```
+
+-   Vite.config.js:
+
+```bash
+ base: "/kasa-app/",
 ```
 
 -   Now run the command :
