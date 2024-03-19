@@ -1,6 +1,8 @@
 # React + Vite
 
-### Link Github Pages :
+## Kasa App
+
+### Github Pages :
 
 -   https://alistairpiot.github.io/kasa-app/
 
@@ -22,9 +24,10 @@ yarn create vite@latest
 
 ## React library :
 
+-   react-router-dom
 -   prop-types
 -   react-collapse
--   GitHub Pages
+-   GitHub Pages => gh-pages
 
 ## Available Scripts
 
@@ -68,6 +71,12 @@ yarn add @fortawesome/free-brands-svg-icons
 yarn add @fortawesome/react-fontawesome@latest
 ```
 
+### React Router installation
+
+```bash
+yarn add react-router-dom
+```
+
 ### PropTypes installation
 
 ```bash
@@ -80,26 +89,26 @@ yarn add prop-types
 yarn add react-collapse
 ```
 
-### GitHub Pages installation
+## GitHub Pages installation
 
 ```bash
 yarn add gh-pages --dev
 ```
 
-#### Add to the package.json file :
+### Add homepage to the package.json file :
 
 ```bash
 "homepage": "https://alistairpiot.github.io//OC-Projet-8/"
 ```
 
--   Add scripts :
+#### add predeploy and deploy:
 
 ```bash
 "predeploy": "yarn run build",
 "deploy": "gh-pages -d dist",
 ```
 
--   Add to the default export in the vite.config.js:
+### Add to the default export in the vite.config.js:
 
 ```bash
  base: "/kasa-app/",
