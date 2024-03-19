@@ -2,7 +2,7 @@
 
 ### Link Github Pages :
 
--   "https://alistairpiot.github.io/kasa-app/"
+-   https://alistairpiot.github.io/kasa-app/
 
 ### Project creation :
 

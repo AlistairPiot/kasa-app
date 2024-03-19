@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    height: 180px;
+    gap: 10px;
+    &__img {
+        height: 48px;
+    }
+    @media (max-width: 768px) {
+        margin-top: 98px;
+    }
+}

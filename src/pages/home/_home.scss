@@ -1,0 +1,15 @@
+body {
+    background-color: #ffffff;
+    font-family: "Montserrat";
+}
+.page-container {
+    margin: 0px 70px;
+    @media (max-width: 480px) {
+        margin: 0px 30px;
+    }
+    // Media Queries for Samsung Galaxy Fold
+    @media (max-width: 280px) {
+        font-size: 15px;
+        margin: 0px 15px;
+    }
+}

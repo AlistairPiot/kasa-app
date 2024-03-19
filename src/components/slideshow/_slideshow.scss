@@ -1,0 +1,42 @@
+.slideshow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    // Media Queries for Samsung Galaxy Fold
+    @media (max-width: 280px) {
+        height: 250px;
+    }
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    &__icon {
+        position: absolute;
+        color: #ffffff;
+        font-size: 54px;
+        cursor: pointer;
+        @media (max-width: 768px) {
+            font-size: 34px;
+        }
+        &--left {
+            left: 20px;
+        }
+        &--right {
+            right: 20px;
+        }
+        &--nbPage {
+            bottom: 0px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+    }
+}

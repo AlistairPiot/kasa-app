@@ -1,0 +1,112 @@
+.logement {
+    margin-bottom: 70px;
+    @media (max-width: 768px) {
+        margin: 0px;
+    }
+    &__container {
+        position: relative;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        &__text {
+            &__title {
+                width: 85%;
+                font-size: 30px;
+                color: #ff6060;
+                margin: 0;
+            }
+            &__location {
+                font-weight: bold;
+                margin: 10px 0;
+            }
+        }
+
+        &__tag {
+            display: flex;
+            justify-content: baseline;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            margin: 10px 0 20px 0;
+            flex-wrap: wrap;
+        }
+        &__host {
+            position: absolute;
+            right: 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            @media (max-width: 768px) {
+                position: relative;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 25px;
+            }
+            &__info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+                &__name {
+                    margin: 0px;
+                    text-align: end;
+                    color: #ff6060;
+                    font-weight: bold;
+                    max-width: 150px;
+                    // Media Queries for Samsung Galaxy Fold
+                    @media (max-width: 280px) {
+                        font-size: 12px;
+                    }
+                }
+                &__picture {
+                    background-color: #c4c4c4;
+                    height: 55px;
+                    width: 55px;
+                    border-radius: 50%;
+                    // Media Queries for Samsung Galaxy Fold
+                    @media (max-width: 280px) {
+                        height: 45px;
+                        width: 45px;
+                    }
+                }
+            }
+            &__icons {
+                color: #e3e3e3;
+                font-size: 20px;
+                display: flex;
+                justify-content: end;
+                // Media Queries for Samsung Galaxy Fold
+                @media (max-width: 280px) {
+                    font-size: 12px;
+                    margin: 0px;
+                }
+
+                > :not(:last-child) {
+                    margin-right: 10px;
+                }
+                .rated {
+                    color: #ff6060;
+                }
+            }
+        }
+
+        &__container2 {
+            display: flex;
+            gap: 70px;
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+            &__collapse {
+                flex: 1;
+                border-radius: 0px;
+                &__li {
+                    list-style: none;
+                }
+            }
+        }
+    }
+}

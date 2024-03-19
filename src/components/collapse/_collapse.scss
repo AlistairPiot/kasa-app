@@ -1,0 +1,40 @@
+@import "../../sass/utils/_animation.scss";
+
+.collapse {
+    background-color: #ff6060;
+    border-radius: 5px;
+    &__close {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__title {
+            color: #ffffff;
+            font-size: 20px;
+            margin-left: 10px;
+        }
+        &__icon {
+            color: #ffffff;
+            font-size: 20px;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+            &.rotate {
+                animation: rotateIcon forwards;
+            }
+        }
+    }
+    &__open {
+        background-color: #ffffff;
+        max-height: 0;
+        overflow: hidden;
+        &.openCollapse {
+            animation: openCollapseAnimation 1s forwards;
+        }
+        &__paragraphe {
+            padding: 15px;
+            margin: 0px;
+            background-color: #f6f6f6;
+            color: black;
+            border-radius: 5px;
+        }
+    }
+}
