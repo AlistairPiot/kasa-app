@@ -108,7 +108,7 @@ yarn add gh-pages --dev
 "deploy": "gh-pages -d dist",
 ```
 
-### Add to the default export in the vite.config.js:
+### Add to the default export in the vite.config.js (GitHub repository’s name):
 
 ```bash
  base: "/kasa-app/",
