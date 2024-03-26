@@ -17,16 +17,25 @@
         grid-gap: 20px;
     }
     &__card {
+        position: relative;
         text-decoration: none;
         width: 300px;
         height: 300px;
         font-size: 12px;
-        background-color: #ff6060;
         border-radius: 10px;
         color: #ffffff;
         display: flex;
         justify-content: baseline;
         align-items: end;
+        &__cover {
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
         @media (max-width: 768px) {
             width: 100%;
         }
@@ -35,6 +44,7 @@
             height: 250px;
         }
         &__title {
+            z-index: 2;
             color: #ffffff;
             margin: 20px;
             width: 70%;
